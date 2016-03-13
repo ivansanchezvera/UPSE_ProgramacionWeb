@@ -20,6 +20,9 @@ img {
 	max-width: 100%;
 }
 
+h3 {
+	margin: 0 0 1em 0;
+}
 
 
 /*******************
@@ -123,6 +126,20 @@ PAGINA: GALERIA
 	padding: 5%;
 	font-size: 0.75em;
 	color: #bdc3c7;
+}
+
+
+
+
+/*******************
+PAGINA ACERCA DE (ABOUT)
+*******************/
+
+.profile-photo {
+	display: block;
+	max-width: 450px;
+	margin: 0 auto 30px;
+	border-radius: 100%;
 }
 
 /*******************
