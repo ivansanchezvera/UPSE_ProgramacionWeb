@@ -60,23 +60,30 @@ $("#menu a").each(function(){
 	$option.text($anchor.text());
 	//Agregar la opcion al select	
 	$select.append($option);
+
+	//Obtener si el link es la pagina actual (tiene clase selected)
+	if($(this).parent().hasClass("selected"))
+	{
+		$option.prop("selected", true);
+	}
 });
 
+//Crear un boton que nos lleve a donde indique el select.
 var $button = $("<button>Go</button>");
 $("#menu").append($button);
 
+//Amarrar evento clic al boton
 $button.click(function(){
-	//Toma el valor de la opcion seleccionada
-	window.location = $select.val();
+	//Ir a donde indique el boton
+	window.location = $select.val(); //Toma el valor de la opcion seleccionada
 
 });
 
-
-
-
-//Crear un boton que nos lleve a donde indique el select.
-//Amarrar evento clic al boton
-	//Ir a donde indique el boton
 	//Aregar la clase selected a cada opcion que indique la pagina actual
+
+
+
+
+
 //Modificar CSS para esconder los links en resoluciones pequenas (width). Mostrar el Select y los botones.
 //CSS debe esconder el select en resoluciones pequenas (width)

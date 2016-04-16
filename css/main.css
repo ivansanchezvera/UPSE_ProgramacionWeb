@@ -236,3 +236,21 @@ OVERLAY con JQuery
 #overlay p {
 	color: white;
 }
+
+/*******************
+Menu para Mobiles con JQUERY
+*******************/
+/*basado en dimensiones de iPhone 5*/
+@media (min-width: 320px) and (max-width: 568px)
+{
+	#menu ul {
+		display: none;
+	}
+}
+
+@media (min-width: 568px)
+{
+	#menu select, #menu button {
+		display: none;
+	}
+}
