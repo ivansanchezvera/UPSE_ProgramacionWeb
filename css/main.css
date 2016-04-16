@@ -215,3 +215,24 @@ nav a.selected {
 	color: #32673f;
 }
 
+/*******************
+OVERLAY con JQuery
+*******************/
+#overlay {
+	background: rgba(0,0,0,0.7); /*ultimo valor es opacity*/
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	text-align: center;
+	display: none; /*para que no se muestre al comienzo*/
+}
+
+#overlay img {
+	margin-top: 10%;
+}
+
+#overlay p {
+	color: white;
+}
