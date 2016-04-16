@@ -62,6 +62,15 @@ $("#menu a").each(function(){
 	$select.append($option);
 });
 
+var $button = $("<button>Go</button>");
+$("#menu").append($button);
+
+$button.click(function(){
+	//Toma el valor de la opcion seleccionada
+	window.location = $select.val();
+
+});
+
 
 
 
