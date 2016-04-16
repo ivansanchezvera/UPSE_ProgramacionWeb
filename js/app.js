@@ -45,4 +45,29 @@ $overlay.click(function(){
 //Problema: El menu no funciona tan bien para moviles.
 //Solucion: Cambiar por una navegacion lateral mas util
 
-//Creemos el menu lateral y aguemoslo al menu
+//Creemos el menu lateral y aguemoslo al menu (nav)
+var $select = $("<select></select>");
+$("#menu").append($select);
+
+//Recorrer el menu
+$("#menu a").each(function(){
+	var $anchor = $(this);
+	//Crear una opcion para el select por cada elemento del menu
+	var $option = $("<option></option>");
+	//Optener cada valor de la opcion del attributo href
+	$option.val($anchor.attr("href"));
+	//Obtener el text de cada opcion
+	$option.text($anchor.text());
+	//Agregar la opcion al select	
+	$select.append($option);
+});
+
+
+
+
+//Crear un boton que nos lleve a donde indique el select.
+//Amarrar evento clic al boton
+	//Ir a donde indique el boton
+	//Aregar la clase selected a cada opcion que indique la pagina actual
+//Modificar CSS para esconder los links en resoluciones pequenas (width). Mostrar el Select y los botones.
+//CSS debe esconder el select en resoluciones pequenas (width)
