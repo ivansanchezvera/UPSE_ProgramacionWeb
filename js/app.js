@@ -63,7 +63,7 @@ $("#menu a").each(function(){
 
 	//Agregar la clase selected a cada opcion que indique la pagina actual
 	//Obtener si el link es la pagina actual (tiene clase selected)
-	if($(this).parent().hasClass("selected"))
+	if($(this).hasClass("selected"))
 	{
 		$option.prop("selected", true);
 	}
